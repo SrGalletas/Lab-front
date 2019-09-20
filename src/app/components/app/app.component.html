@@ -1,28 +1,21 @@
 <header>
     <ul class="nav fixed-top">
         <li class="nav-item">
-            <a class="nav-link active" href="javascript:void(0);">Главная</a>
+            <a class="nav-link active" [routerLink]="'/home'">Главная</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="javascript:void(0);">О магазине</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/catalog.component.html">Каталог</a>
+            <a class="nav-link" [routerLink]="'/catalog'">Каталог</a>
         </li>
-        <li class="nav-item">
+        <li class=" nav-item">
             <a class="nav-link disabled" href="javascript:void(0);">Контакты</a>
         </li>
     </ul>
 </header>
 
-<div class="container">
-    <div class="col-3">
-
-    </div>
-    <div class="col">
-
-    </div>
-</div>
+<router-outlet></router-outlet>
 
 <footer>
     <div class="end-page mt-5">
